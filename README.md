@@ -2,7 +2,7 @@
 
 June 2017
 
-BiotaBeats website code
+Biota Beats website code
 http://www.biotabeats.org
 
 - Website developed for iGEM 2016 by Thrasyvoulos Karydis & HTMLup https://html5up.net
