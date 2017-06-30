@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP     and    Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Biota Beats - by EMW Streetbio</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+
+    
+    
+<!--    START BIOTA BEATS INTERACTIVE VISUALIZATION-->
+            <!-- Styling -->
+            <link href="assets/css/BB_style.css" rel="stylesheet">   
+        
+             <!-- Javascripts -->
+            <!-- <script type="text/javascript" src="./d3/d3.min.js"></script>-->
+            <script src="http://d3js.org/d3.v3.min.js"></script>
+            <script src="assets/js/BB_equalizer-app.js"></script>
+            <script src="assets/js/BB_prep.js"></script>
+            <script src="assets/js/BB_grow_colonies.js"></script>
+
+<!--------------------------------------------------------------------------->
+<!--    MUSIC EQUALIZER                                   ------------------->            
+<!--    Based on work from Garry Smith                                     -->
+<!--    https://www.bignerdranch.com/blog/music-visualization-with-d3-js/  -->
+<!--------------------------------------------------------------------------->  
+<!-- Prepare audioelements to be called later:-->
+        <audio id="audioElementFee" class="audiobutton" src="./BB_music/1-feet-track7-starttime0.mp3"></audio>
+        <audio id="audioElementGen" class="audiobutton" src="./BB_music/2-genitalia-track6-starttime0.mp3"></audio>
+        <audio id="audioElementBel" class="audiobutton" src="./BB_music/3-belly_track9-starttime0.mp3"></audio>
+        <audio id="audioElementArm" class="audiobutton" src="./BB_music/4-armpit_track8_starttime0.mp3"></audio>
+        <audio id="audioElementMou" class="audiobutton" src="./BB_music/5-mouth-track10-starttime0.mp3"></audio>
+        <audio id="audioElementSym" class="audiobutton" src="./BB_music/6-SYMPHONY.mp3"></audio>
+        
+<!-- Prepare general audioelement to hold the audiofiles later:        -->
+        <audio id="audioElementWrapper" class="audiobutton" src="" type="audio/mpeg"></audio>
+<!--------------------------------------------------------------------------->  
+            
+</head>
+<body class="no-sidebar">
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header-wrapper">
+        <div id="header" class="container">
+
+            <!-- Logo -->
+            <h1 id="logo"><a href="index.html"></a></h1>
+
+            <!-- Nav -->
+            <nav id="nav" class="row">
+                <ul class="5u 6u(narrow)" style="position:absolute; left: 0;">
+                                        <li><a href="concept.html">Our story</a></li>
+<!--
+                    <li>
+                        <a href="hardware.html">Hardware</a>
+                        <ul>
+                            <li><a href="incubator.html">Incubator</a></li>
+                            <li><a href="records.html">Microbiome Records</a></li>
+                        </ul>
+                    </li>
+-->
+                    <li><a href="biota-to-beats.html">Biota &#8594; Beats</a></li>
+<!--                    <li><a href="sonification.html">Sonification</a></li>-->
+                    <li class="active"><a href="visualization.html">Play</a></li>
+                </ul>
+                <ul class="5u 6u(narrow)" style="position:absolute; right: 0;">
+                    <!--<li class="break">-->
+                    <li><a href="engagement.html">Engagement</a></li>
+                    <li><a href="team.html">Team</a></li>
+<!--                    <li><a href="attributions.html">Attributions</a></li>-->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Features 1 -->
+    <div id="wrapper" class="wrapper">
+        <div id="main" class="container">
+ 
+            <section id="first" class="special">
+
+                
+                
+                <!--    Main content of vis            -->  
+            <div id="content">
+
+                    <!-- Three sections: body, disc, music--> 
+                    <div id="BiotaBody">
+                        
+                        <!--  Slideshow of BODY BB_images-->
+                        <img id="slider" src="./BB_images/AllBW-lessBW.jpg" height="520px">
+                        
+                    </div>
+
+                    <div id="Disc"></div>
+
+                    <div id="Music" class="music">
+                        
+                        <svg id="equalizersvg" width="425px" height="450px" >
+                            <polyline fill="none" stroke="#444" stroke-width="1"
+                                             points="0,150
+                                                     0,450
+                                                     400,450" />
+                        </svg>
+                    </div> 
+
+            </div> <!--    end of main content    -->
+       
+            <!--    Row with buttons for interactivity    -->        
+            <div id="Buttons_div"></div>
+       
+            <!--    Buttons for interactivity with music  -->
+        <div>
+                  <button id="playpause" onclick="document.getElementById('audioElementWrapper').pause()">Pause the Audio</button>
+        </div>
+        
+            <!--    Footer with data details and credits            -->
+            <div id="footer">
+                    <div id="footer-content">
+                    Image credit <a href="http://tsevis.tumblr.com/post/72040193609/virus-science-news" target="_blank">Tsevis Visual Design </a>
+                    </div>
+            </div>
+      
+      <!--    Kick-off the Biota Beats creation script!    -->
+      <script src="assets/js/BB_main.js"></script>  
+                
+                
+                
+            
+                
+            </section>
+
+            
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="copyright" class="container">
+        <ul class="menu">
+                <li>&copy; EMW Streetbio</li>
+                <li>  Biota Beats is created by <a href="http://www.emwbookstore.com/street-bio/" target="_blank">EMW Street Bio team</a></li>
+                <li>Design: Thras Karydis, <a href="https://saramaria.org/" target="_blank">Sara Maria</a> &amp; <a href="http://html5up.net">HTML5 UP</a> </li>
+        </ul>
+    </div>
+</div>
+
+<!-- Scripts -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
