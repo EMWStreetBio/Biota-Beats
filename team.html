@@ -17,6 +17,68 @@
     <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+    
+    
+    <style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.containerteam {
+  padding: 0 16px;
+}
+
+.containerteam::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.buttonteam {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonteam:hover {
+  background-color: #555;
+}
+</style>
+    
+    
+    
 </head>
 <body class="no-sidebar">
 <div id="page-wrapper">
@@ -31,25 +93,13 @@
             <!-- Nav -->
             <nav id="nav" class="row">
                 <ul class="5u 6u(narrow)" style="position:absolute; left: 0;">
-                    <li><a href="concept.html">Our story</a></li>
-<!--
-                    <li>
-                        <a href="hardware.html">Hardware</a>
-                        <ul>
-                            <li><a href="incubator.html">Incubator</a></li>
-                            <li><a href="records.html">Microbiome Records</a></li>
-                        </ul>
-                    </li>
--->
+                    <li><a href="intro.html">Intro</a></li>
                     <li><a href="biota-to-beats.html">Biota &#8594; Beats</a></li>
-<!--                    <li><a href="sonification.html">Sonification</a></li>-->
-                    <li><a href="visualization.html">Play</a></li>
+                    <li><a href="visualization.html">Play!</a></li>
                 </ul>
                 <ul class="5u 6u(narrow)" style="position:absolute; right: 0;">
-                    <!--<li class="break">-->
                     <li><a href="engagement.html">Engagement</a></li>
                     <li class="active"><a href="team.html">Team</a></li>
-<!--                    <li><a href="attributions.html">Attributions</a></li>-->
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -57,204 +107,184 @@
     </div>
 
     <!-- Features 1 -->
+    
+                    
     <div class="wrapper">
         <div id="main" class="container">
-            <!-- People -->
-            <section id="first" class="special">
-                <header class="major">
-                    <h2>Meet the Team</h2>
-                </header>
-                <ul class="features">
-                    <li class="row">
-                        <span class="profile 3u">
-                            <img src="http://2016.igem.org/wiki/images/c/cb/T--EMW_Street_Bio--images_david.png"
-                                 alt="">
-                            <h3>David Sun Kong, PhD</h3>
-                        </span>
-                        <div class="details-r 9u">
-                            <p>David Sun Kong, Ph.D., is a synthetic biologist, community organizer, musician, and
-                                photographer. He conducted his graduate studies at MIT’s Media Laboratory, receiving a
-                                Master’s degree in nanotechnology and a Ph.D. in synthetic biology. He currently
-                                conducts research at MIT’s Lincoln Laboratory, where he is a world leader in developing
-                                microfluidic, “lab-on-a-chip” biotechnologies. He was recognized as an emerging leader
-                                in synthetic biology as a “LEAP” fellow, served as a guest faculty member at the Marine
-                                Biology Lab in Woods Hole, and is managing faculty of “How To Grow (Almost) Anything,”
-                                an international course on biotechnology. David is also the founder and director of EMW,
-                                a community center in Cambridge MA with a mission of empowering communities through art
-                                and technology. As a musician, David has performed as a DJ, beat-boxer, vocalist, and
-                                rapper at hundreds of venues. His photography has been exhibited at the National Museum
-                                of American History at the Smithsonian and other museums and galleries across the
-                                U.S.</p>
-                        </div>
-                    </li>
-                    <li class="row">
-                        <div class="details-l 9u">
+    <header></br></br></br></header>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <a href="david.html"><img src="images/david.png" alt="David" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>David Sun Kong, Ph.D.</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
 
-                            <p>Keerthi is a Hellman Fellow in Science and Technology Policy at the American Academy.
-                                Keerthi joined the American Academy after completing her Ph.D in Immunobiology at Yale
-                                University. At Yale, she was the co-president of the Yale Science Diplomats, a science
-                                policy group, where she helped develop a science lecture series for local high schools
-                                and the general public, organized policy writing workshops and seminars, and contacted
-                                legislators about funding issues concerning biomedical research. She is excited to be
-                                able to continue her passion for STEM outreach through EMW Street Bio.</p>
-                        </div>
-                        <span class="profile 3u">
-                                        <img src="http://2016.igem.org/wiki/images/e/e2/T--EMW_Street_Bio--images_keerthi.jpg"
-                                             alt="">
-                                        <h3>Keerthi Shetty, PhD</h3>
-                                    </span>
-                    </li>
-                    <li class="row">
-                                    <span class="profile 3u">
-                                        <img src="http://2016.igem.org/wiki/images/4/47/T--EMW_Street_Bio--images_thras.jpg"
-                                             alt="">
-                                        <h3>Thrasyvoulos Karydis</h3>
-                                    </span>
-                        <div class="details-r 9u">
-                            <p>Thras is a first year PhD student in the Molecular Machines group at MIT Media Lab. As a
-                                Research Assistant in Molecular Machines group and the MIT Center for Bits and Atoms, he
-                                is actively involved in multidisciplinary projects including Computational Biology,
-                                Synthetic Biology, Artificial Olfaction, Femto-second laser Micro-Machining and
-                                rapid-prototyping. He is a graduate of the very first course of How to Grow almost
-                                Anything! He was an undergrad at University of Patras, Greece, as an Electrical and
-                                Computer Engineer with a major in Information theory and Communications, where he worked
-                                on Quantum Cryptography.</p>
-                        </div>
-                    </li>
-                    <li class="row">
-                        <div class="details-l 9u">
-                            <p>Yixiao Jiang is a student of How to Grow Almost Anything. With a degree in Economics,
-                                much passion for technologies, and endless curiosity about the world, she’s now trying
-                                to "grow" a sound from the microbiome.
-                            </p>
-                        </div>
-                        <span class="profile 3u">
-                                        <img src="http://2016.igem.org/wiki/images/1/1a/T--EMW_Street_Bio--images-yixiao.jpg"
-                                             alt="">
-                                        <h3>Yixiao Jiang</h3>
-                                    </span>
-                    </li>
-                    <li class="row">
-                                    <span class="profile 3u">
-                                        <img src="http://2016.igem.org/wiki/images/c/c1/T--EMW_Street_Bio--images_alexguo.jpg"
-                                             alt="">
-                                        <h3>Alexandria Guo</h3>
-                                    </span>
-                        <div class="details-r 9u">
-
-                            <p>Alexandria Guo is a sophomore studying computational biology at Wellesley College.
-                                Currently working in a computational chemistry lab modelling protein-protein
-                                interactions, she also enjoys reading in her spare time and volunteers at the EMW
-                                Library.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="row">
-                        <div class="details-l 9u">
-                            <p>Born and raised in South Central Los Angeles, Matt is a cancer researcher at the
-                                Dana-Farber Cancer Institute and aspiring emergency medicine physician. As a science
-                                educator, jazz musician, community organizer and advocate for social medicine Matt is
-                                interested in humanities and arts in medicine and the relationship between community
-                                health, the democratization of biotechnology, health disparities and social
-                                inequality.</p>
-                        </div>
-                        <span class="profile 3u">
-                                        <img src="http://2016.igem.org/wiki/images/3/38/T--EMW_Street_Bio--images_mateo.png"
-                                             alt="">
-                                        <h3>Matt Mendoza</h3>
-                                    </span>
-                    </li>
-                    <li class="row">
-                                    <span class="profile 3u">
-                                        <img src="http://2016.igem.org/wiki/images/0/04/T--EMW_Street_Bio--images_mary.jpg"
-                                             alt="">
-                                        <h3>Mary Tsang</h3>
-                                    </span>
-                        <div class="details-r 9u">
-
-                            <p>Mary 'Maggic' Tsang is an artist and biohacker working at the intersection of culture,
-                                biotechnology, and civil disobedience. Her investigations challenge the role of creator
-                                and creation, the ethics of the postnatural product, and the supposed promises of
-                                science and technology. She holds a Bachelor of Science and Art (BSA) in Biological
-                                Sciences and Art from Carnegie Mellon University and is currently pursuing her masters
-                                in Media Arts and Sciences at MIT Media Lab, Design Fiction research group.</p>
-                        </div>
-                    </li>
-                    <li class="row">
-                        <div class="details-l 9u">
-
-                            <p>Shannon is a Research Assistant at the Neurobiology Department of the Harvard Medical
-                                School and is currently pursuing a Masters in Bioengineering and Nanotechnologies with a
-                                focus on microfluidics at the Harvard University Extension School. At Brown University
-                                she studied Biochemistry and Molecular Biology and investigated the use of mesenchymal
-                                stem cell-derived extracellular vesicles to treat liver damage from acetaminophen
-                                overdose in mice. She recently has gotten involved with the DIY bio community spaces of
-                                Boston and is having a wonderful time meeting new people through EMW Street Bio and the
-                                iGEM competition.</p>
-                        </div>
-                        <span class="profile 3u">
-                                        <img src="http://2016.igem.org/wiki/images/d/da/T--EMW_Street_Bio--images_shannon.jpg"
-                                             alt="">
-                                        <h3>Shannon Johnson</h3>
-                                    </span>
-                    </li>
-                    <li class="row">
-                                    <span class="profile 3u">
-                                        <img src="http://2016.igem.org/wiki/images/2/26/T--EMW_Street_Bio--images_ani.jpg"
-                                             alt="">
-                                        <h3>Ani Liu</h3>
-                                    </span>
-                        <div class="details-r 9u">
-
-                            <p>Ani is a speculative technologist, artist, designer and researcher. Her work explores the
-                                intersection between technology, sensory perception, culture & implications of emerging
-                                technologies. Her work has spanned the scales of built installations, prosthetic
-                                wearables, virtual reality immersions, to synthetic biology, as she searches for the
-                                epiphanies linking technological innovation with emotional affordance. Trained as an
-                                artist at Dartmouth, an architect at Harvard, and now a ​researcher at MIT​ Media Lab​,
-                                Ani continually seeks to discover the unexpected, through playful experimentation,
-                                intuition, and speculative storytelling.</p>
-                        </div>
-                    </li>
-                    <li class="row">
-                        <div class="details-l 9u">
-                            <p>Viirj Kan is an interaction researcher and designer working at the intersection of
-                                materials, chemistry, and robotics. She develops interfaces that connect humans to a
-                                broad range of systems. Currently at MIT Media Lab, she researches new methods for
-                                developing programmable biopolymers. Prior to joining MIT, Viirj conducted human-robot
-                                interaction research at NASA Jet Propulsion Laboratory and worked as a freelance design
-                                consultant. Her work has been featured on Fast Company, CNN, Vice, MIT News and the
-                                Museum of Fine Arts. She is holds a Bachelor of Science in Environmental Design from the
-                                Art Center College of Design in Pasadena and is currently completing a Master of Science
-                                at Massachusetts Institute of Technology.</p>
-                        </div>
-                        <span class="profile 3u">
-                                        <img src="http://2016.igem.org/wiki/images/8/86/T--EMW_Street_Bio--images_viirj.jpg"
-                                             alt="">
-                                        <h3>Viirj Kan</h3>
-                                    </span>
-                    </li>
-                    <li class="row">
-                                    <span class="profile 3u">
-                                        <img src="http://2016.igem.org/wiki/images/b/b8/T--EMW_Street_Bio--images_rachel.png"
-                                             alt="">
-                                        <h3>Rachel Smith</h3>
-                                    </span>
-                        <div class="details-r 9u">
-
-                            <p>Rachel Smith is a biomedical engineer exploring processes of integrating biology into
-                                materials and current fabrication processes. She hopes such mergers will spark brand new
-                                relationships and applications in which our materials may inherit the traits of sensing,
-                                reacting, growing or cooperating organisms. Rachel has a long-time interest in engaging
-                                people in the community with explorational biological engineering and the
-                                demystification of genetic modification. She holds a Bachelor of Science from University
-                                of Virginia, and is currently a researcher at the Mediated Matter group of the MIT Media
-                                Lab. </p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-
+   
+    <div class="column">
+    <div class="card">
+      <a href="keerthi.html"><img src="images/keerthi.jpg" alt="Keerthi" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Keerthi Shetty, Ph.D.</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
+      <a href="thras.html"><img src="images/thras.jpg" alt="Thras" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Thrasyvoulos Karydis</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>   
+    
+      <div class="column">
+    <div class="card">
+      <a href="yixiao.html"><img src="images/yixiao.jpg" alt="Yixiao" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Yixiao Jiang</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div> 
+    
+  <div class="column">
+    <div class="card">
+      <a href="alex.html"><img src="images/alexguo.jpg" alt="Alex" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Alex Guo</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
+      <a href="gautam.html"><img src="images/gautam.jpg" alt="Gautam" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Gautam Salhotra</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
+      <a href="matt.html"><img src="images/mateo.png" alt="Matt" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Matt Mendoza</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
+    
+    <div class="column">
+    <div class="card">
+      <a href="mary.html"><img src="images/mary.jpg" alt="Mary" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Mary 'Maggic' Tsang</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
+     
+    <div class="column">
+    <div class="card">
+      <a href="shannon.html"><img src="images/shannon.jpg" alt="Shannon" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Shannon Johnson</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
+    
+    <div class="column">
+    <div class="card">
+      <a href="ani.html"><img src="images/ani.jpg" alt="Ani" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Ani Liu</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
+       
+     <div class="column">
+    <div class="card">
+      <a href="viirj.html"><img src="images/viirj.jpg" alt="Viirj" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Viirj Kan</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
+       
+     <div class="column">
+    <div class="card">
+      <a href="rachel.html"><img src="images/rachel.png" alt="Rachel" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Rachel Smith</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
+       
+    
+  <div class="column">
+    <div class="card">
+      <a href="sara.html"><img src="images/sara.jpg" alt="Sara" style="width:100%"></a>
+      <div class="containerteam">
+        <h2>Sara Maria Sprinkhuizen, Ph.D.</h2>
+        <p class="title">Title Text here</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+<!--        <p>example@example.com</p>-->
+<!--        <p><button class="buttonteam">more info</button></p>-->
+      </div>
+    </div>
+  </div>
+</div>
+                
             <!-- About EMW -->
             <section id="team" class="main">
                 <div class="spotlight">
@@ -300,8 +330,7 @@
 
                     </div>
             </section>
-        </div>
-    </div>
+
     <!-- Footer -->
     <div id="copyright" class="container">
         <ul class="menu">
