@@ -6,19 +6,23 @@
 -->
 <html>
 <head>
-    <title>Biota Beats - by EMW Streetbio</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--[if lte IE 8]>
-    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css"/>
-
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
-
-    
+        <!-- Declare the character set of the document -->
+        <meta charset="UTF-8">
+        <!-- Support IE9-IE10 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Set the viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Page Info -->
+        <title>Biota Beats - by EMW Street Bio</title>
+        <meta name="author" content="EMW Street Bio team">
+        <meta name="description" content="Biota Beats - A microbial record player developed by the EMW Street Bio team.">
+        <meta property="og:image" content="./BB_images/BiotaBeats_screenshot.png">
+        <meta name="keywords" content="Biota,Beats,microbiome,microbiota,bacteria,EMW,Street,Bio,record,player,DJ,music,art,data art">
+        <!-- Javascripts -->
+        <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <!-- Styling -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
     
 <!--    START BIOTA BEATS INTERACTIVE VISUALIZATION-->
             <!-- Styling -->
@@ -47,7 +51,7 @@
 <!-- Prepare general audioelement to hold the audiofiles later:        -->
         <audio id="audioElementWrapper" class="audiobutton" src="" type="audio/mpeg"></audio>
 <!--------------------------------------------------------------------------->  
-            
+    
 </head>
 <body class="no-sidebar">
 <div id="page-wrapper">
@@ -81,23 +85,21 @@
  
             <section id="first" class="special">
 
-                
-                
+            <!--    Row with buttons for interactivity    -->        
+            <div id="Buttons_div"></div>
+       
                 <!--    Main content of vis            -->  
             <div id="content">
 
                     <!-- Three sections: body, disc, music--> 
                     <div id="BiotaBody">
-                        
                         <!--  Slideshow of BODY BB_images-->
                         <img id="slider" src="./BB_images/AllBW-lessBW.jpg" height="520px">
-                        
                     </div>
 
                     <div id="Disc"></div>
 
                     <div id="Music" class="music">
-                        
                         <svg id="equalizersvg" width="425px" height="450px" >
                             <polyline fill="none" stroke="#444" stroke-width="1"
                                              points="0,150
@@ -108,9 +110,6 @@
 
             </div> <!--    end of main content    -->
        
-            <!--    Row with buttons for interactivity    -->        
-            <div id="Buttons_div"></div>
-       
             <!--    Buttons for interactivity with music  -->
         <div>
                   <button id="playpause" onclick="document.getElementById('audioElementWrapper').pause()">Pause the Audio</button>
@@ -118,7 +117,7 @@
         
             <!--    Footer with data details and credits            -->
             <div id="footer">
-                    <div id="footer-content">
+                    <div id="footer-content" style="font-size:12px">
                     Image credit <a href="http://tsevis.tumblr.com/post/72040193609/virus-science-news" target="_blank">Tsevis Visual Design </a>
                     </div>
             </div>

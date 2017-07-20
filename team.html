@@ -6,75 +6,84 @@
 -->
 <html>
 <head>
-    <title>Biota Beats - by EMW Streetbio</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--[if lte IE 8]>
-    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css"/>
-
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+        <!-- Declare the character set of the document -->
+        <meta charset="UTF-8">
+        <!-- Support IE9-IE10 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Set the viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Page Info -->
+        <title>Biota Beats - by EMW Street Bio</title>
+        <meta name="author" content="EMW Street Bio team">
+        <meta name="description" content="Biota Beats - A microbial record player developed by the EMW Street Bio team.">
+        <meta property="og:image" content="./BB_images/BiotaBeats_screenshot.png">
+        <meta name="keywords" content="Biota,Beats,microbiome,microbiota,bacteria,EMW,Street,Bio,record,player,DJ,music,art,data art">
+        <!-- Javascripts -->
+        <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <!-- Styling -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
     
     
     <style>
-html {
-  box-sizing: border-box;
-}
+/*        Based on https://www.w3schools.com/howto/howto_css_team.asp*/
+        html {
+          box-sizing: border-box;
+        }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
 
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
 
-@media (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
+        @media (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
 
-.containerteam {
-  padding: 0 16px;
-}
+        .containerteam {
+          padding: 0 12px;
+        }
 
-.containerteam::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+        .containerteam::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
 
-.title {
-  color: grey;
-}
+        .title {
+          color: grey;
+        }
 
-.buttonteam {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
+        .buttonteam {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
 
-.buttonteam:hover {
-  background-color: #555;
-}
+        .buttonteam:hover {
+          background-color: #555;
+        }
+
+        .imglink{border: none;}
 </style>
     
     
@@ -115,13 +124,10 @@ html {
 <div class="row">
   <div class="column">
     <div class="card">
-      <a href="david.html"><img src="images/david.png" alt="David" style="width:100%"></a>
+      <a class="imglink" href="david.html"><img src="images/team/david.png" alt="David" style="width:100%"></a>
       <div class="containerteam">
-        <h2>David Sun Kong, Ph.D.</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="david.html"><h2>David Sun Kong, PhD</h2></a>
+        <p>Synthetic Biologist, community organizer, musician, and photographer.</p>
       </div>
     </div>
   </div>
@@ -129,157 +135,122 @@ html {
    
     <div class="column">
     <div class="card">
-      <a href="keerthi.html"><img src="images/keerthi.jpg" alt="Keerthi" style="width:100%"></a>
+      <a class="imglink" href="keerthi.html"><img src="images/team/keerthi.jpg" alt="Keerthi" style="width:100%"></a>
       <div class="containerteam">
-        <h2>Keerthi Shetty, Ph.D.</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="keerthi.html"><h2>Keerthi Shetty, PhD</h2></a>
+        <p>Biologist, community engager, policy enthusiast, and nature lover.</p>
       </div>
     </div>
   </div>
     
   <div class="column">
     <div class="card">
-      <a href="thras.html"><img src="images/thras.jpg" alt="Thras" style="width:100%"></a>
+      <a class="imglink" href="thras.html"><img src="images/team/thras.jpg" alt="Thras" style="width:100%"></a>
       <div class="containerteam">
-        <h2>Thrasyvoulos Karydis</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="thras.html"><h2>Thrasyvoulos Karydis</h2></a>
+        <p>Bio-hacker, maker, deep learning architect and PhD Candidate at the MIT Media Lab.</p>
       </div>
     </div>
   </div>   
     
-      <div class="column">
+  <div class="column">
     <div class="card">
-      <a href="yixiao.html"><img src="images/yixiao.jpg" alt="Yixiao" style="width:100%"></a>
+      <a class="imglink" href="alex.html"><img src="images/team/alexguo.jpg" alt="Alex" style="width:100%"></a>
       <div class="containerteam">
-        <h2>Yixiao Jiang</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="alex.html"><h2>Alex Guo</h2></a>
+        <p>Undergraduate Researcher at MIT Media Lab, Community Biotechnology Initiative.</p>
+      </div>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
+      <a class="imglink" href="gautam.html"><img src="images/team/gautam.jpg" alt="Gautam" style="width:100%"></a>
+      <div class="containerteam">
+        <a class="imglink" href="gautam.html"><h2>Gautam Salhotra</h2></a>
+        <p>Robotics nerd, outdoor enthusiast, lover of science.</p>
+      </div>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
+      <a class="imglink" href="yixiao.html"><img src="images/team/yixiao.jpg" alt="Yixiao" style="width:100%"></a>
+      <div class="containerteam">
+        <a class="imglink" href="yixiao.html"><h2>Yixiao Jiang</h2></a>
+        <p><br><br></p>
       </div>
     </div>
   </div> 
     
-  <div class="column">
+    <div class="column">
     <div class="card">
-      <a href="alex.html"><img src="images/alexguo.jpg" alt="Alex" style="width:100%"></a>
+      <a class="imglink" href="sara.html"><img src="images/team/sara.jpg" alt="Sara" style="width:100%"></a>
       <div class="containerteam">
-        <h2>Alex Guo</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="sara.html"><h2>Sara Maria Sprinkhuizen, PhD</h2></a>
+        <p>Physicist and online data visualization lover.</p>
       </div>
     </div>
   </div>
     
-  <div class="column">
-    <div class="card">
-      <a href="gautam.html"><img src="images/gautam.jpg" alt="Gautam" style="width:100%"></a>
-      <div class="containerteam">
-        <h2>Gautam Salhotra</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
-      </div>
-    </div>
-  </div>
+
     
-  <div class="column">
+    <div class="column">
     <div class="card">
-      <a href="matt.html"><img src="images/mateo.png" alt="Matt" style="width:100%"></a>
+      <a class="imglink" href="matt.html"><img src="images/team/mateo.png" alt="Matt" style="width:100%"></a>
       <div class="containerteam">
-        <h2>Matt Mendoza</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="matt.html"><h2>Matt Mendoza</h2></a>
+        <p><br><br></p>
       </div>
     </div>
   </div>
     
     <div class="column">
     <div class="card">
-      <a href="mary.html"><img src="images/mary.jpg" alt="Mary" style="width:100%"></a>
+      <a class="imglink" href="mary.html"><img src="images/team/mary.jpg" alt="Mary" style="width:100%"></a>
       <div class="containerteam">
-        <h2>Mary 'Maggic' Tsang</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="mary.html"><h2>Mary 'Maggic' Tsang</h2></a>
+        <p><br><br></p>
       </div>
     </div>
   </div>
      
     <div class="column">
     <div class="card">
-      <a href="shannon.html"><img src="images/shannon.jpg" alt="Shannon" style="width:100%"></a>
+      <a class="imglink" href="shannon.html"><img src="images/team/shannon.jpg" alt="Shannon" style="width:100%"></a>
       <div class="containerteam">
-        <h2>Shannon Johnson</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="shannon.html"><h2>Shannon Johnson</h2></a>
+        <p><br><br></p>
       </div>
     </div>
   </div>
     
     <div class="column">
     <div class="card">
-      <a href="ani.html"><img src="images/ani.jpg" alt="Ani" style="width:100%"></a>
+      <a class="imglink" href="ani.html"><img src="images/team/ani.jpg" alt="Ani" style="width:100%"></a>
       <div class="containerteam">
-        <h2>Ani Liu</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="ani.html"><h2>Ani Liu</h2></a>
+        <p><br><br></p>
       </div>
     </div>
   </div>
        
      <div class="column">
     <div class="card">
-      <a href="viirj.html"><img src="images/viirj.jpg" alt="Viirj" style="width:100%"></a>
+      <a class="imglink" href="viirj.html"><img src="images/team/viirj.jpg" alt="Viirj" style="width:100%"></a>
       <div class="containerteam">
-        <h2>Viirj Kan</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="viirj.html"><h2>Viirj Kan</h2></a>
+        <p><br><br></p>
       </div>
     </div>
   </div>
        
      <div class="column">
     <div class="card">
-      <a href="rachel.html"><img src="images/rachel.png" alt="Rachel" style="width:100%"></a>
+      <a class="imglink" href="rachel.html"><img src="images/team/rachel.png" alt="Rachel" style="width:100%"></a>
       <div class="containerteam">
-        <h2>Rachel Smith</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
-      </div>
-    </div>
-  </div>
-       
-    
-  <div class="column">
-    <div class="card">
-      <a href="sara.html"><img src="images/sara.jpg" alt="Sara" style="width:100%"></a>
-      <div class="containerteam">
-        <h2>Sara Maria Sprinkhuizen, Ph.D.</h2>
-        <p class="title">Title Text here</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-<!--        <p>example@example.com</p>-->
-<!--        <p><button class="buttonteam">more info</button></p>-->
+        <a class="imglink" href="rachel.html"><h2>Rachel Smith</h2></a>
+        <p><br><br></p>
       </div>
     </div>
   </div>
@@ -289,7 +260,7 @@ html {
             <section id="team" class="main">
                 <div class="spotlight">
                     <div class="content">
-                        <header class="major">
+                        <header class="special">
                             <h2>EMW Street Bio</h2>
                         </header>
                         <p>Biology is humanity’s next technology revolution. The ability to re-engineer life on our
@@ -324,7 +295,7 @@ html {
                             a biohacking space that was much needed in Cambridge.</p>
 
                         <ul class="actions align-center">
-                            <li><a href="http://www.emwbookstore.com/street-bio/" class="button">
+                            <li><a href="http://www.emwbookstore.com/street-bio/" target="blank" class="button">
                                 Learn More about EMW Street Bio</a></li>
                         </ul>
 

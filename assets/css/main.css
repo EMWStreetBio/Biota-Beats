@@ -461,7 +461,8 @@
 	}
 
 		a:hover {
-			color: #e95653;
+/*			color: #7653e9;*/
+            font-
 			border-bottom-color: transparent;
 		}
 
@@ -469,6 +470,13 @@
         a:visited {
             color: inherit;
         }
+
+
+/*
+     a .nolink{
+			border-bottom-color: transparent;
+		}
+*/
 
 
 	strong, b {

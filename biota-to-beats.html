@@ -6,17 +6,139 @@
 -->
 <html>
 <head>
-    <title>Biota Beats - by EMW Streetbio</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <!--[if lte IE 8]>
-    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css"/>
+        <!-- Declare the character set of the document -->
+        <meta charset="UTF-8">
+        <!-- Support IE9-IE10 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Set the viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Page Info -->
+        <title>Biota Beats - by EMW Street Bio</title>
+        <meta name="author" content="EMW Street Bio team">
+        <meta name="description" content="Biota Beats - A microbial record player developed by the EMW Street Bio team.">
+        <meta property="og:image" content="./BB_images/BiotaBeats_screenshot.png">
+        <meta name="keywords" content="Biota,Beats,microbiome,microbiota,bacteria,EMW,Street,Bio,record,player,DJ,music,art,data art">
+        <!-- Javascripts -->
+        <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <!-- Styling -->
+        <link rel="stylesheet" href="assets/css/main.css"/>
 
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
+       
+<!--    Style for slideshow on this page:-->
+<!--    Code based on: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+<style>
+
+        /*
+            *{
+                border: 1px solid #f8d581 !important;
+                }
+        */
+
+
+        * {box-sizing:border-box}
+        body {margin:0}
+        .mySlides {
+            display:none;
+            margin-top: 80px;
+        }
+
+            /* Slideshow container */
+        .slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -20px;
+          color: white;
+          background-color: rgba(0,0,0,0.8);
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        /*  background-color: rgba(0,0,0,0.8);*/
+          background-color: rgba(77, 138, 235, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+          color: #444;
+          font-size: 18px;
+          padding: 8px 12px;
+          position: absolute;
+          top: -80px;
+          width: 100%;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #e5e2e2;
+          font-size: 18px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 10;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor:pointer;
+          height: 13px;
+          width: 13px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .activedot, .dot:hover {
+          background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev, .next,.text {font-size: 11px}
+        }
+</style>
+    
+    
+    
 </head>
 <body class="no-sidebar">
 <div id="page-wrapper">
@@ -47,53 +169,119 @@
     <!-- Features 2 -->
     <div class="wrapper">
         <header class="major special">
-<!--            <h2>Culturing</h2>-->
         </header>
 
         <section class="container">
             <header class="special">
-                <h3>How are your bacteria turned into sound?</h3>
+                <h2>How are your bacteria turned into sound?</h2>
+                <br>
             </header>
-            <article class="row align-justify">
-                <p>Text here.</p>
+            
+<!--            Slideshow of Biota Beats pres:-->
+            <div class="slideshow-container">
 
-                <span class="image 8u -2u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.001.jpg"
-                        alt=""/></span>
-                <span class="image 8u -2u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.005.jpg"
-                        alt=""/></span>
-                <span class="image 8u -2u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.003.jpg"
-                        alt=""/></span>
-                <span class="image 8u -2u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.006.jpg"
-                        alt=""/></span>
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 9</div>
+              <div class="text"> Click through the slides below to learn more!</div>
+              <img src="images/biota-to-beats/BB-pres.001.jpg" style="width:100%">
+            </div>
+               
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 9</div>
+              <div class="text">Can hip hop save biotechnology? The Biota Beats system remixes aspects of music, DJ turntablism, and biology to create new and intuitive interactions with microbiota.</div>
+              <img src="images/biota-to-beats/BB-pres.003.jpg" style="width:100%">
+            </div>
                 
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 9</div>
+              <div class="text">A diagram of the Biota Beats setup.</div>
+              <img src="images/biota-to-beats/BB-pres.005.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 9</div>
+              <div class="text">Biota-records were designed after EP and LP vinyls and come in one of two designs: concentric and pie.</div>
+              <img src="images/biota-to-beats/BB-pres.006.jpg" style="width:100%">
+            </div>    
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 9</div>
+              <div class="text">Bacterial samples from the human body are swabbed and streaked onto the biota-record.</div>
+              <img src="images/biota-to-beats/BB-pres.007.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 9</div>
+              <div class="text">How does our sonification algorithm work? Step 1: inoculate organisms from the body and capture images.</div>
+              <img src="images/biota-to-beats/BB-pres.008.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">7 / 9</div>
+              <div class="text">How does our sonification algorithm work? Step 2: image processing to detect organisms and sectorize by body part.</div>
+              <img src="images/biota-to-beats/BB-pres.009.jpg" style="width:100%">
+            </div>
                 
-                <span class="image 8u -2u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.007.jpg"
-                        alt=""/>Text here</span>
-                <span class="image 8u -2u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.008.jpg"
-                        alt=""/>Text here</span>
-                <span class="image 8u -2u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.009.jpg"
-                        alt=""/>Text here</span>
-                <span class="image 8u -2u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.010.jpg"
-                        alt=""/>Text here</span>
-                <span class="image 8u -2u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.012.jpg"
-                        alt=""/>Text here</span>
-                <span class="image 6u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.013.jpg"
-                        alt=""/>Text here</span>
-                <span class="image 6u 12u(mobile)"><img
-                        src="images/BB-pres/BB-pres.014.jpg"
-                        alt=""/>Text here</span>
-            </article>
-        </section>
+            <div class="mySlides fade">
+              <div class="numbertext">8 / 9</div>
+              <div class="text">How does our sonification algorithm work? Step 3: generate data streams (location, diameter, density)</div>
+              <img src="images/biota-to-beats/BB-pres.010.jpg" style="width:100%">
+            </div>
+                
+            <div class="mySlides fade">
+              <div class="numbertext">9 / 9</div>
+              <div class="text">Next steps for Biota Beats: a digital library of biota-records to play and contribute to!</div>
+              <img src="images/biota-to-beats/BB-pres.012.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+              <span class="dot" onclick="currentSlide(7)"></span> 
+              <span class="dot" onclick="currentSlide(8)"></span> 
+              <span class="dot" onclick="currentSlide(9)"></span> 
+            </div>
+
+<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" activedot", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " activedot";
+        }
+</script>
+            
+</section>
         
     </div>
 
