@@ -1,1 +1,11 @@
+# WebStorm specific
 .idea/
+
+# Old website
+old_website/
+
+# Server specific
+stats/
+.membership
+
+
